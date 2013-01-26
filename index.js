@@ -8,7 +8,7 @@ exports.filter = function() {
 
 var read = require("fs").readFileSync;
 
-module.exports.__express = function(path, options, fn){
+exports.renderFile = function(path, options, fn){
   if ('function' == typeof options) {
     fn = options, options = {};
   }
@@ -19,3 +19,6 @@ module.exports.__express = function(path, options, fn){
     fn(err);
   }
 };
+
+exports.__express = exports.renderFile;
+exports.__isomorphic = exports.renderFile;
