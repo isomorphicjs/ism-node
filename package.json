@@ -1,0 +1,16 @@
+{
+  "name": "ism",
+  "version": "0.0.1",
+  "description": "Isomorphic templates for Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/isomorphicjs/ism.git"
+  },
+  "author": "Cameron Bytheway <cameron@nujii.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
